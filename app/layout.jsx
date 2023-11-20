@@ -1,7 +1,10 @@
-import './globals.css'
-import { Rubik } from 'next/font/google'
+import './globals.css';
+import { Rubik } from 'next/font/google';
 
-const rubik = Rubik({ subsets: ['latin'] })
+// As we now removed static pages we should build our app layout dynamically always
+export const dynamic = 'force-dynamic';
+
+const rubik = Rubik({ subsets: ['latin'] });
 
 export const metadata = {
   title: 'Create Next App',
